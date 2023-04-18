@@ -1,0 +1,52 @@
+1)
+Faire le tableau pour comparer
+Type matrice : 1 		2		3		4
+eig		5.000e-02	1.000e-02	1.000e-02	2.000e-02
+powerv11	7.480e+00	1.400e-01	3.100e-01	7.210e+00
+
+comparer qualité des résultats
+
+
+2)
+Tableau
+
+
+
+3)
+powerv11 -> plus précis mais plus lent
+powerv12 -> plus rapide mais moins précis
+
+4)
+V converge vers une matrice qui contient m vecteurs propres de A
+
+5)
+A (n,n)
+V (n,m)
+Y = A*V (n,m)
+H = V'*V (m,m)
+
+Donc m pas trop grand donc ça se calcule
+
+
+8)
+A (n,n)
+V (n,m)
+A^p -> (2n-1)*n^2=2n^3-n^2  flops
+A^p * V = (2n-1)*m*n = 2n^2*m - mn flops
+
+Y = A^p*V (n,m) 
+H = V'*V (m,m)
+
+Pour réduire le nombre de calculs, on peut stocker A^p dans une variable constante. car A et p ne changent pas.
+
+10)
+Plus p est grand et plus le nombre d'itération est petit
+
+
+11)
+La précision diffère selon les vecteurs car le critère d'arrêt est fait avec le pourcentage de la trace et pas avec l'invariance relative des vecteurs propres.
+
+12)
+On suppose que la précision va baisser car on ne recalcule plus les vecteurs deja calculés mais ils seront donc moins précis.
+
+13)

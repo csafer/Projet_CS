@@ -1,0 +1,181 @@
+>> test_v11
+
+Matrice 200 x 200 - type 1
+
+******* création de la matrice ******
+
+Temps de création de la matrice = 1.600e-01
+
+******* calcul avec eig ******
+
+Temps eig = 1.000e-02
+Qualité des couples propres (par rapport au critère d'arrêt) = [5.352e-16 , 1.033e-13]
+Qualité des valeurs propres (par rapport au spectre de la matrice) = [0.000e+00 , 2.642e-14] 
+
+Matrice 200 x 200 - type 1
+
+******* calcul avec la méthode de la puissance itérée ******
+
+Temps puissance itérée = 7.160e+00
+Nombre de valeurs propres pour attendre le pourcentage = 46
+Qualité des couples propres (par rapport au critère d'arrêt) = [9.977e-09 , 1.422e-08]
+Qualité des valeurs propres (par rapport au spectre de la matrice) = [0.000e+00 , 1.990e-14] 
+
+Matrice 200 x 200 - type 1
+
+******* calcul avec la méthode de la puissance itérée améliorée ******
+
+Temps puissance itérée = 1.740e+00
+Nombre de valeurs propres pour attendre le pourcentage = 46
+Qualité des couples propres (par rapport au critère d'arrêt) = [7.009e-05 , 1.002e-04]
+Qualité des valeurs propres (par rapport au spectre de la matrice) = [1.819e-10 , 9.899e-07]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+>> test_v11
+
+Matrice 200 x 200 - type 2
+
+******* création de la matrice ******
+
+Temps de création de la matrice = 1.500e-01
+
+******* calcul avec eig ******
+
+Temps eig = 0.000e+00
+Qualité des couples propres (par rapport au critère d'arrêt) = [3.823e-16 , 1.341e-06]
+Qualité des valeurs propres (par rapport au spectre de la matrice) = [0.000e+00 , 9.059e-08] 
+
+Matrice 200 x 200 - type 2
+
+******* calcul avec la méthode de la puissance itérée ******
+
+Temps puissance itérée = 1.300e-01
+Nombre de valeurs propres pour attendre le pourcentage = 5
+Qualité des couples propres (par rapport au critère d'arrêt) = [9.767e-09 , 1.794e-08]
+Qualité des valeurs propres (par rapport au spectre de la matrice) = [1.460e-16 , 1.595e-15] 
+
+Matrice 200 x 200 - type 2
+
+******* calcul avec la méthode de la puissance itérée améliorée ******
+
+Temps puissance itérée = 5.000e-02
+Nombre de valeurs propres pour attendre le pourcentage = 5
+Qualité des couples propres (par rapport au critère d'arrêt) = [5.344e-05 , 1.197e-04]
+Qualité des valeurs propres (par rapport au spectre de la matrice) = [2.325e-08 , 7.569e-08]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+>> test_v11
+
+Matrice 200 x 200 - type 3
+
+******* création de la matrice ******
+
+Temps de création de la matrice = 1.700e-01
+
+******* calcul avec eig ******
+
+Temps eig = 1.000e-02
+Qualité des couples propres (par rapport au critère d'arrêt) = [5.321e-16 , 5.473e-11]
+Qualité des valeurs propres (par rapport au spectre de la matrice) = [0.000e+00 , 1.641e-11] 
+
+Matrice 200 x 200 - type 3
+
+******* calcul avec la méthode de la puissance itérée ******
+
+Temps puissance itérée = 2.600e-01
+Nombre de valeurs propres pour attendre le pourcentage = 9
+Qualité des couples propres (par rapport au critère d'arrêt) = [9.733e-09 , 1.487e-08]
+Qualité des valeurs propres (par rapport au spectre de la matrice) = [0.000e+00 , 1.554e-15] 
+
+Matrice 200 x 200 - type 3
+
+******* calcul avec la méthode de la puissance itérée améliorée ******
+
+Temps puissance itérée = 7.000e-02
+Nombre de valeurs propres pour attendre le pourcentage = 9
+Qualité des couples propres (par rapport au critère d'arrêt) = [6.417e-05 , 9.593e-05]
+Qualité des valeurs propres (par rapport au spectre de la matrice) = [2.058e-10 , 7.993e-08] 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+>> test_v11
+
+Matrice 200 x 200 - type 4
+
+******* création de la matrice ******
+
+Temps de création de la matrice = 1.600e-01
+
+******* calcul avec eig ******
+
+Temps eig = 1.000e-02
+Qualité des couples propres (par rapport au critère d'arrêt) = [6.339e-16 , 4.994e-14]
+Qualité des valeurs propres (par rapport au spectre de la matrice) = [0.000e+00 , 2.609e-14] 
+
+Matrice 200 x 200 - type 4
+
+******* calcul avec la méthode de la puissance itérée ******
+
+Temps puissance itérée = 7.700e+00
+Nombre de valeurs propres pour attendre le pourcentage = 46
+Qualité des couples propres (par rapport au critère d'arrêt) = [9.954e-09 , 1.422e-08]
+Qualité des valeurs propres (par rapport au spectre de la matrice) = [0.000e+00 , 1.998e-14] 
+
+Matrice 200 x 200 - type 4
+
+******* calcul avec la méthode de la puissance itérée améliorée ******
+
+Temps puissance itérée = 1.500e+00
+Nombre de valeurs propres pour attendre le pourcentage = 46
+Qualité des couples propres (par rapport au critère d'arrêt) = [6.994e-05 , 1.004e-04]
+Qualité des valeurs propres (par rapport au spectre de la matrice) = [4.663e-10 , 9.907e-07] 
