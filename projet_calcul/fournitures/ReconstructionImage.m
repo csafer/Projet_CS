@@ -33,7 +33,7 @@ td = 0;
 for k = inter
 
     % Calcul de l'image de rang k
-    Im_k = U(:, 1:k)*S(1:k, 1:k)*V(:, 1:k)';
+    Im_k = U_(:, 1:k)*S(1:k, 1:k)*U_(:, 1:k)';
 
     % Affichage de l'image reconstruite
     ti = ti+1;
@@ -49,7 +49,7 @@ end
 
 % Figure des différences entre image réelle et image reconstruite
 ti = ti+1;
-figure(ti)
+figure(ti)% TODO
 hold on 
 plot(inter, differenceSVD, 'rx')
 ylabel('RMSE')
@@ -84,22 +84,35 @@ puiss = 1;
 
 %%
 % calcul des couples propres
+[U_ou_V,D,k_,it,~,flag] = subspace_iter_v2(Im_k,search_space,percentage,puiss,eps,maxit);
 
-
-
-%%
-% TODO
 %%
 % calcul des valeurs singulières
-%%
-% TODO
+S_ = sqrt(D);
+
 %%
 % calcul de l'autre ensemble de vecteurs
-%%
-% TODO
+
+
+if (length(U_ou_V)==p) %U_ou_V==V
+    V_ = U_ou_V;
+    U_ = zeros(q,q);
+    for i = 1:p
+        U_(:,i) = 1/S_(i,i) * Im_k*U_ou_V(:,i);
+    end
+else
+    U_ = U_ou_V;
+    V_ = zeros(p,p);
+    for i = 1:p
+        V_(:,i) = 1/S_(i,i) * Im_k'*U_ou_V(:,i);
+    end
+    
+end
+
+
 %%
 % calcul des meilleures approximations de rang faible
-%%
-for k = 1 %...
-% TODO
+%TODO
+for k = 1:k_ 
+    
 end
