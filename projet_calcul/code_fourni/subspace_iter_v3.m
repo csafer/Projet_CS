@@ -50,6 +50,7 @@ function [ V, D, n_ev, it, itv, flag ] = subspace_iter_v3( A, m, percentage, p, 
     Vr = randn(n, m);
     Vr = mgs(Vr);
     A_p  = A^p;
+    Wr=zeros(1,size(A,1));
 
     % rappel : conv = (eigsum >= trace) | (nb_c == m)
     while (~conv && k < maxit)
@@ -63,8 +64,10 @@ function [ V, D, n_ev, it, itv, flag ] = subspace_iter_v3( A, m, percentage, p, 
         Vr = mgs_block(Y,nb_c);
         
         %% Projection de Rayleigh-Ritz
-        [Wr, Vr] = rayleigh_ritz_projection(A, Vr);
-        
+        [Wnc, Vnc] = rayleigh_ritz_projection(A, Vr(:,nb_c+1:end));
+        Vr = [ Vr(:,1:nb_c) Vnc ];
+        Wr = [ Wr(1:nb_c) ;Wnc ];
+
         %% Quels vecteurs ont convergé à cette itération
         analyse_cvg_finie = 0;
         % nombre de vecteurs ayant convergé à cette itération
